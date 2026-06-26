@@ -61,8 +61,8 @@ onUnmounted(() => {
         <NuxtLink to="#about" class="nav-item">
           <span class="brackets">[</span><span class="nav-text">{{ t('nav.about') }}</span><span class="brackets">]</span>
         </NuxtLink>
-        <NuxtLink to="#projects" class="nav-item">
-          <span class="brackets">[</span><span class="nav-text">{{ t('nav.projects') }}</span><span class="brackets">]</span>
+        <NuxtLink to="#experience" class="nav-item">
+          <span class="brackets">[</span><span class="nav-text">{{ t('nav.experience') }}</span><span class="brackets">]</span>
         </NuxtLink>
         <NuxtLink to="#contact" class="nav-item">
           <span class="brackets">[</span><span class="nav-text">{{ t('nav.contact') }}</span><span class="brackets">]</span>

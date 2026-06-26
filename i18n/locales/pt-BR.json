@@ -13,7 +13,14 @@
   },
   "nav": {
     "about": "01. Sobre",
-    "projects": "02. Projetos",
+    "experience": "02. Experiências",
     "contact": "03. Contato"
+  },
+  "experience": {
+    "header": "> ls -la ./experience/",
+    "dir": "drwxr-xr-x  enzo staff   4096 Jun 26 00:00 .",
+    "job1": "2024_engenheiro_de_dados_senior{'@'}empresa_confidencial.log",
+    "job2": "2022_desenvolvedor_de_software{'@'}tech_solutions.log",
+    "job3": "2020_analista_de_dados{'@'}data_corp.log"
   }
 }

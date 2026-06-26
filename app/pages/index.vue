@@ -38,15 +38,15 @@ const { t } = useI18n()
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="terminal-section">
+    <!-- Experience Section -->
+    <section id="experience" class="terminal-section">
       <div class="terminal-card">
-        <div class="card-header">> ls -la ./projects/</div>
+        <div class="card-header">{{ t('experience.header') }}</div>
         <div class="card-body">
-          <p>drwxr-xr-x  enzo staff   4096 Jun 25 23:55 .</p>
-          <p>-rwxr-xr-x  enzo staff  32014 Jun 25 23:55 <a href="#" class="terminal-link">realtime_etl_pipeline.py</a></p>
-          <p>-rwxr-xr-x  enzo staff  18902 Jun 25 23:55 <a href="#" class="terminal-link">airflow_orchestration_dag.py</a></p>
-          <p>-rwxr-xr-x  enzo staff  45091 Jun 25 23:55 <a href="#" class="terminal-link">distributed_spark_processor.java</a></p>
+          <p>{{ t('experience.dir') }}</p>
+          <p>-rwxr-xr-x  enzo staff  32014 Jun 26 00:00 <a href="#" class="terminal-link">{{ t('experience.job1') }}</a></p>
+          <p>-rwxr-xr-x  enzo staff  18902 Jun 26 00:00 <a href="#" class="terminal-link">{{ t('experience.job2') }}</a></p>
+          <p>-rwxr-xr-x  enzo staff  45091 Jun 26 00:00 <a href="#" class="terminal-link">{{ t('experience.job3') }}</a></p>
         </div>
       </div>
     </section>
