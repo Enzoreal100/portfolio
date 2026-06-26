@@ -17,8 +17,8 @@
 - **Routing:** Nuxt File-Based Routing (`~/pages`).
 - **Auto-Imports:** Utilize Nuxt's native auto-import engine.
   - **Prohibited:** Manual imports of standard Vue APIs (`ref`, `computed`, `watch`, etc.) or custom utilities and composables under `~/utils` and `~/composables`.
-- **Styling:** Vanilla Scoped CSS using custom CSS Variables, OR Tailwind CSS via `@nuxtjs/tailwindcss` (strictly mapped to project design tokens).
-  - **Prohibited:** Third-party UI component libraries (Nuxt UI, Vuetify, PrimeVue, Radix, etc.). All UI elements must be built custom.
+- **Styling:** Tailwind CSS via `@nuxtjs/tailwindcss` (strictly mapped to project design tokens).
+  - **Prohibited:** Pure/Vanilla CSS (except for global root definitions or complex CRT/canvas animations impossible via Tailwind), and third-party UI component libraries (Nuxt UI, Vuetify, PrimeVue, Radix, etc.). All UI elements must be built custom.
 - **Animations:** HTML5 `<canvas>` (Digital Rain effect), Native CSS transitions/animations, and GSAP.
   - GSAP must be executed strictly client-side using `import.meta.client` to prevent SSR issues.
 - **Internationalization (i18n):** Setup using `@nuxtjs/i18n` is mandatory. Every single user-facing text, label, log, menu item, or message **must** be localized in three languages: Brazilian Portuguese (`pt-BR`), English (`en`), and Spanish (`es`) utilizing `$t()` or the `useI18n()` composable. Hardcoded user-facing strings are strictly prohibited.

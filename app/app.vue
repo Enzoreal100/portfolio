@@ -1,5 +1,5 @@
 <template>
-  <div class="crt-screen">
+  <div class="relative min-h-screen w-full bg-void crt-screen">
     <NuxtRouteAnnouncer />
     <UiTerminalHeader />
     <NuxtPage />
@@ -28,15 +28,7 @@ html, body {
   scrollbar-width: thin;
 }
 
-/* CRT monitor aesthetic wrapper */
-.crt-screen {
-  position: relative;
-  min-height: 100vh;
-  width: 100%;
-  background: var(--void-bg);
-}
-
-/* CRT scanlines overlay */
+/* CRT scanlines overlay (Exceção do GEMINI.md para efeitos CRT) */
 .crt-screen::before {
   content: " ";
   display: block;
@@ -54,18 +46,5 @@ html, body {
   pointer-events: none;
   opacity: 0.8;
 }
-
-/* Page container wrapper */
-.page-container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 80px 2rem 2rem 2rem;
-  box-sizing: border-box;
-}
-
-@media (max-width: 768px) {
-  .page-container {
-    padding: 80px 1rem 1rem 1rem;
-  }
-}
 </style>
+

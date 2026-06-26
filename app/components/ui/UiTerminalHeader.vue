@@ -42,134 +42,29 @@ onUnmounted(() => {
 <template>
   <header
     :class="[
-      'terminal-header',
-      {
-        'is-visible': isVisible,
-        'is-opaque': isAtTop,
-        'is-translucent': !isAtTop
-      }
+      'fixed top-0 left-0 w-full h-[60px] z-[1000] box-border font-mono border-b transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)]',
+      isVisible ? 'translate-y-0 opacity-100 pointer-events-auto' : '-translate-y-full opacity-0 pointer-events-none',
+      isAtTop ? 'bg-panel border-matrix-green shadow-header-opaque' : 'bg-panel/75 backdrop-blur-md border-matrix-dim/30'
     ]"
   >
-    <div class="header-container">
+    <div class="flex justify-between items-center h-full px-4 md:px-8 mx-auto max-w-[1440px] w-full box-border">
       <!-- Left Brand Link -->
-      <NuxtLink to="/" class="brand-link">
-        <span class="brackets">[</span><span class="brand-text">EGR</span><span class="brackets">]</span>
+      <NuxtLink to="/" class="text-matrix-green no-underline text-sm md:text-base tracking-[0.05em] inline-flex items-center transition-all duration-200 outline-none hover:text-matrix-glow hover:[text-shadow:0_0_8px_var(--matrix-glow)] group">
+        <span class="text-matrix-dim transition-colors duration-200 group-hover:text-matrix-glow">[</span><span class="px-1">EGR</span><span class="text-matrix-dim transition-colors duration-200 group-hover:text-matrix-glow">]</span>
       </NuxtLink>
 
       <!-- Right Navigation Links -->
-      <nav class="nav-menu">
-        <NuxtLink to="#about" class="nav-item">
-          <span class="brackets">[</span><span class="nav-text">{{ t('nav.about') }}</span><span class="brackets">]</span>
+      <nav class="flex gap-3 md:gap-6">
+        <NuxtLink to="#about" class="text-matrix-green no-underline text-sm md:text-base tracking-[0.05em] inline-flex items-center transition-all duration-200 outline-none hover:text-matrix-glow hover:[text-shadow:0_0_8px_var(--matrix-glow)] group">
+          <span class="text-matrix-dim transition-colors duration-200 group-hover:text-matrix-glow">[</span><span class="px-1">{{ t('nav.about') }}</span><span class="text-matrix-dim transition-colors duration-200 group-hover:text-matrix-glow">]</span>
         </NuxtLink>
-        <NuxtLink to="#experience" class="nav-item">
-          <span class="brackets">[</span><span class="nav-text">{{ t('nav.experience') }}</span><span class="brackets">]</span>
+        <NuxtLink to="#experience" class="text-matrix-green no-underline text-sm md:text-base tracking-[0.05em] inline-flex items-center transition-all duration-200 outline-none hover:text-matrix-glow hover:[text-shadow:0_0_8px_var(--matrix-glow)] group">
+          <span class="text-matrix-dim transition-colors duration-200 group-hover:text-matrix-glow">[</span><span class="px-1">{{ t('nav.experience') }}</span><span class="text-matrix-dim transition-colors duration-200 group-hover:text-matrix-glow">]</span>
         </NuxtLink>
-        <NuxtLink to="#contact" class="nav-item">
-          <span class="brackets">[</span><span class="nav-text">{{ t('nav.contact') }}</span><span class="brackets">]</span>
+        <NuxtLink to="#contact" class="text-matrix-green no-underline text-sm md:text-base tracking-[0.05em] inline-flex items-center transition-all duration-200 outline-none hover:text-matrix-glow hover:[text-shadow:0_0_8px_var(--matrix-glow)] group">
+          <span class="text-matrix-dim transition-colors duration-200 group-hover:text-matrix-glow">[</span><span class="px-1">{{ t('nav.contact') }}</span><span class="text-matrix-dim transition-colors duration-200 group-hover:text-matrix-glow">]</span>
         </NuxtLink>
       </nav>
     </div>
   </header>
 </template>
-
-<style scoped>
-.terminal-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  transform: translateY(-100%);
-  width: 100%;
-  height: 60px;
-  z-index: 1000;
-  box-sizing: border-box;
-  font-family: 'Fira Code', 'JetBrains Mono', monospace;
-  opacity: 0;
-  pointer-events: none;
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease, border-color 0.3s ease;
-  border-bottom: 1px solid transparent;
-}
-
-/* Visibility transition state */
-.terminal-header.is-visible {
-  transform: translateY(0);
-  opacity: 1;
-  pointer-events: auto;
-}
-
-/* Opacity states */
-.terminal-header.is-opaque {
-  background-color: var(--panel-bg, #0D110D);
-  border-bottom: 1px solid var(--matrix-green, #00FF41);
-  box-shadow: 0 0 8px rgba(0, 255, 65, 0.25);
-}
-
-.terminal-header.is-translucent {
-  background-color: rgba(13, 17, 13, 0.75);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(0, 143, 17, 0.3);
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  padding: 0 2rem;
-  margin: 0 auto;
-  max-width: 1440px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-/* Base interactive elements */
-.brand-link, .nav-item {
-  color: var(--matrix-green, #00FF41);
-  text-decoration: none;
-  font-size: 1rem;
-  letter-spacing: 0.05em;
-  display: inline-flex;
-  align-items: center;
-  transition: text-shadow 0.2s ease, color 0.2s ease;
-  outline: none;
-}
-
-.brackets {
-  color: var(--matrix-dim, #008F11);
-  transition: color 0.2s ease;
-}
-
-.brand-text, .nav-text {
-  padding: 0 0.25rem;
-}
-
-/* Hover effects */
-.brand-link:hover, .nav-item:hover {
-  color: var(--matrix-glow, #4AF626);
-  text-shadow: 0 0 8px var(--matrix-glow, #4AF626);
-}
-
-.brand-link:hover .brackets, .nav-item:hover .brackets {
-  color: var(--matrix-glow, #4AF626);
-}
-
-/* Navigation layout */
-.nav-menu {
-  display: flex;
-  gap: 1.5rem;
-}
-
-@media (max-width: 768px) {
-  .header-container {
-    padding: 0 1rem;
-  }
-  
-  .nav-menu {
-    gap: 0.75rem;
-  }
-  
-  .brand-link, .nav-item {
-    font-size: 0.85rem;
-  }
-}
-</style>
