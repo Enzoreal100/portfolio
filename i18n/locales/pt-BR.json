@@ -1,0 +1,14 @@
+{
+  "system": {
+    "title": "ENZO REAL // PORTFÓLIO TERMINAL",
+    "welcome": "SISTEMA OPERACIONAL ENZO REAL v1.0.0",
+    "prompt": "guest{'@'}enzo:~#",
+    "loading": "Carregando sistema..."
+  },
+  "menu": {
+    "hero": "INÍCIO",
+    "experience": "EXPERIÊNCIA",
+    "stack": "TECNOLOGIAS",
+    "terminal": "TERMINAL"
+  }
+}

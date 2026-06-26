@@ -21,6 +21,7 @@
   - **Prohibited:** Third-party UI component libraries (Nuxt UI, Vuetify, PrimeVue, Radix, etc.). All UI elements must be built custom.
 - **Animations:** HTML5 `<canvas>` (Digital Rain effect), Native CSS transitions/animations, and GSAP.
   - GSAP must be executed strictly client-side using `import.meta.client` to prevent SSR issues.
+- **Internationalization (i18n):** Setup using `@nuxtjs/i18n` is mandatory. Every single user-facing text, label, log, menu item, or message **must** be localized in three languages: Brazilian Portuguese (`pt-BR`), English (`en`), and Spanish (`es`) utilizing `$t()` or the `useI18n()` composable. Hardcoded user-facing strings are strictly prohibited.
 
 ---
 
