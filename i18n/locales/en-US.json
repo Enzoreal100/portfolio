@@ -10,5 +10,10 @@
     "experience": "EXPERIENCE",
     "stack": "TECHNOLOGIES",
     "terminal": "TERMINAL"
+  },
+  "nav": {
+    "about": "01. About",
+    "projects": "02. Projects",
+    "contact": "03. Contact"
   }
 }

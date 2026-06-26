@@ -10,5 +10,10 @@
     "experience": "EXPERIENCIA",
     "stack": "TECNOLOGÍAS",
     "terminal": "TERMINAL"
+  },
+  "nav": {
+    "about": "01. Sobre",
+    "projects": "02. Proyectos",
+    "contact": "03. Contacto"
   }
 }
