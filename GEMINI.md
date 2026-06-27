@@ -4,6 +4,11 @@
 - **Owner:** Enzo Real
 - **Profession:** Data Engineer & Software Developer (Specialization: Python, Airflow, AWS, Java, .NET)
 - **Visual Concept:** Cyberpunk / Terminal Unix / The Matrix. The application is styled as a POSIX command-line interface (CLI) running on a high-resolution, green phosphor CRT monitor.
+- **Pages Context (4 Pages):**
+  - **Homepage:** Informações resumidas sobre o restante.
+  - **Sobre:** Um "sobre mim" mais detalhado com uma foto.
+  - **Experiências:** Todas as experiências com programação estruturadas em cards.
+  - **Contato:** Todas as informações de contato.
 
 ---
 

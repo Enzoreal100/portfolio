@@ -1,3 +1,11 @@
+<script setup lang="ts">
+const { t } = useI18n()
+
+useHead({
+  title: () => t('system.title')
+})
+</script>
+
 <template>
   <div class="relative min-h-screen w-full bg-void crt-screen">
     <NuxtRouteAnnouncer />

@@ -1,26 +1,186 @@
 {
   "system": {
     "title": "ENZO REAL // PORTAFOLIO TERMINAL",
-    "welcome": "SISTEMA OPERATIVO ENZO REAL v1.0.0",
+    "welcome": "SISTEMA OPERATIVO ENZO REAL v2.0 // POSIX CLI",
     "prompt": "guest{'@'}enzo:~#",
-    "loading": "Cargando sistema..."
-  },
-  "menu": {
-    "hero": "INICIO",
-    "experience": "EXPERIENCIA",
-    "stack": "TECNOLOGÍAS",
-    "terminal": "TERMINAL"
+    "loading": "Cargando módulos del sistema..."
   },
   "nav": {
+    "home": "00. Inicio",
     "about": "01. Sobre",
     "experience": "02. Experiencias",
     "contact": "03. Contacto"
   },
+  "header": {
+    "brand": "EGR // CLI"
+  },
+  "hero": {
+    "boot_command": "> ./init_portfolio.sh --verbose",
+    "status": "> status: 200 OK // SISTEMA EN LÍNEA",
+    "connection": "> conexión: CIFRADO VERDE CRT ACTIVO",
+    "title": "ENZO GAIÃO REAL",
+    "subtitle": "INGENIERO DE DATOS & DESARROLLADOR DE SOFTWARE",
+    "summary_cmd": "> cat /etc/motd",
+    "summary_text": "Especializado en tuberías ETL/ELT, modelado dimensional (Star Schema), arquitectura Medallion y ecosistemas Cloud. Transformando entornos legados en arquitecturas de datos escalables y orientadas a la gobernanza.",
+    "explore_hint": ">>> SELECCIONE UNA PÁGINA EN EL MENÚ SUPERIOR O EXPLORE SECCIONES <<<",
+    "btn_about": "[ ./acceder_perfil.sh ]",
+    "btn_experience": "[ ./ver_experiencias.sh ]",
+    "btn_contact": "[ ./iniciar_contacto.sh ]"
+  },
+  "about": {
+    "header": "> cat enzo_profile.json",
+    "photo_alt": "Retrato Bio-Digital // Enzo Real",
+    "name_label": "\"name\":",
+    "name_value": "\"Enzo Gaião Real\"",
+    "role_label": "\"role\":",
+    "role_value": "\"Ingeniero de Datos & Desarrollador de Software\"",
+    "obj_label": "\"objective\":",
+    "obj_value": "\"Ingeniero de Datos con experiencia práctica en la arquitectura de soluciones ETL/ELT, modelado dimensional (Star Schema) y tuberías Medallion. Especializado en Python, SQL y orquestación de datos, enfocado en transformar entornos legados en ecosistemas escalables y orientados a la gobernanza.\"",
+    "edu_header": "> cat education.log",
+    "edu_title": "FORMACIÓN ACADÉMICA",
+    "edu_institution": "FIAP - Facultad de Informática y Administración Paulista",
+    "edu_course": "Grado en Ingeniería de Software (Nocturno)",
+    "edu_period": "02/2024 - 12/2027",
+    "edu_details": "Participación activa en proyectos prácticos institucionales, resolviendo desafíos reales proporcionados por empresas como Ford, Dasa y Tech Mahindra.",
+    "lang_header": "> locale --all",
+    "lang_title": "IDIOMAS DE INTERFAZ",
+    "languages": [
+      {
+        "name": "Portugués",
+        "level": "Nativo"
+      },
+      {
+        "name": "Inglés",
+        "level": "Avanzado / Fluido"
+      },
+      {
+        "name": "Español",
+        "level": "Intermedio"
+      },
+      {
+        "name": "Francés",
+        "level": "Básico"
+      }
+    ]
+  },
+  "stack": {
+    "header": "> ls -lh /usr/local/skills/",
+    "title": "COMPETENCIAS PROFESIONALES",
+    "cat_eng": "[ INGENIERÍA & MODELADO ]",
+    "items_eng": [
+      "Python",
+      "SQL",
+      "DuckDB",
+      "Pandas",
+      "SQLAlchemy",
+      "Apache Airflow",
+      "ETL / ELT",
+      "Star Schema",
+      "Arquitectura Medallion",
+      "Calidad de Datos"
+    ],
+    "cat_cloud": "[ CLOUD & BASES DE DATOS ]",
+    "items_cloud": [
+      "AWS S3",
+      "AWS ECS",
+      "AWS Step Functions",
+      "AWS ALB",
+      "AWS RDS",
+      "AWS Athena",
+      "Microsoft Azure",
+      "PostgreSQL",
+      "SQL Server",
+      "MySQL"
+    ],
+    "cat_dev": "[ DESARROLLO & DEVOPS ]",
+    "items_dev": [
+      "Docker",
+      "Git",
+      "Linux / UNIX",
+      ".NET Framework",
+      "Node.js",
+      "Express",
+      "React",
+      "TypeScript",
+      "REST APIs",
+      "Java",
+      "OpenAPI"
+    ],
+    "courses_header": "> cat certificados.txt",
+    "courses_title": "CURSOS COMPLEMENTARIOS",
+    "courses": [
+      "Jornada Python - (Hashtag Treinamentos) - 2024",
+      "AWS Cloud Quest - Amazon AWS - 2025"
+    ]
+  },
   "experience": {
-    "header": "> ls -la ./experience/",
-    "dir": "drwxr-xr-x  enzo staff   4096 Jun 26 00:00 .",
-    "job1": "2024_ingeniero_de_datos_senior{'@'}empresa_confidencial.log",
-    "job2": "2022_desarrollador_de_software{'@'}tech_solutions.log",
-    "job3": "2020_analista_de_datos{'@'}data_corp.log"
+    "header": "> tail -n 50 /var/log/career_history.log",
+    "subtitle": "REGISTRO DE EJECUCIÓN PROFESIONAL Y ACADÉMICA",
+    "jobs": [
+      {
+        "id": "exp_01",
+        "company": "MadeInWeb",
+        "role": "Becario de Ingeniería de Datos",
+        "period": "Dic 2025 - Actual",
+        "location": "São Paulo, SP",
+        "type": "[ PROFESIONAL ]",
+        "bullets": [
+          "Responsable del desarrollo y arquitectura de Data Trust Monitor, una solución automatizada de monitoreo de Calidad de Datos, Gobernanza y Auditoría compatible con diversos motores de bases de datos relacionales utilizando Python, SQLAlchemy, SQL, APIs externas, Pandas y servicios AWS.",
+          "Actuación end-to-end en la reestructuración de un entorno crítico de BI. Ingeniería inversa de informes legados para diseñar el modelo dimensional (Star Schema) desde cero sin documentación previa.",
+          "Desarrollo de tubería Medallion en Python/DuckDB, migrando transformaciones pesadas de Lenguaje M y DAX a SQL, y estructuración de scripts modulares listos para orquestación en Apache Airflow, desacoplando la ingeniería de datos de la capa de visualización."
+        ]
+      },
+      {
+        "id": "exp_02",
+        "company": "MadeInWeb",
+        "role": "Becario de Desarrollo de Software",
+        "period": "Mar 2025 - Dic 2025",
+        "location": "São Paulo, SP",
+        "type": "[ PROFESIONAL ]",
+        "bullets": [
+          "Participación activa en el desarrollo Frontend y Backend de un proyecto interno de compra de ganado (en compliance), utilizando .NET Framework y React.",
+          "Miembro del equipo desarrollador del Backend del Proyecto Ganadero Transparente para el control y fiscalización de granjas en territorio brasileño, utilizando Express y Node.js."
+        ]
+      },
+      {
+        "id": "exp_03",
+        "company": "LabSync",
+        "role": "Tech Lead",
+        "period": "Mar 2025 - Actual",
+        "location": "São Paulo, SP",
+        "type": "[ ACADÉMICO // LIDERANZA ]",
+        "bullets": [
+          "Liderazgo del equipo de Desarrollo de Software, IA y DevOps, tomando decisiones críticas de arquitectura de software.",
+          "Participación activa en el desarrollo Backend del proyecto, perfeccionando conocimientos en Bases de Datos, Java y OpenAPI."
+        ]
+      },
+      {
+        "id": "exp_04",
+        "company": "X Encuentro y III Congreso Bienal de Logística Mackenzie",
+        "role": "Autor de Artículo Científico",
+        "period": "Oct 2024",
+        "location": "São Paulo, SP",
+        "type": "[ INVESTIGACIÓN CIENTÍFICA ]",
+        "bullets": [
+          "Publicación del artículo “Tokenización en la Fórmula E: El Potencial de las Criptomonedas y NFTs en el Futuro de las Carreras Sostenibles”.",
+          "Análisis de precios y demanda de compra de criptomonedas vinculadas a mercados de NFT mediante técnicas de análisis y modelos matemáticos, planteando hipótesis sobre la creciente virtualización monetaria mundial."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "header": "> ./establecer_comunicacion.sh",
+    "subtitle": "CANALES DE TRANSMISIÓN Y CONEXIÓN DIRECTA",
+    "phone_label": "TELÉFONO // WHATSAPP",
+    "phone_val": "+55 (11) 93929-7997",
+    "email_label": "CORREO ELECTRÓNICO",
+    "email_val": "enzoreal100{'@'}gmail.com",
+    "linkedin_label": "RED PROFESIONAL",
+    "linkedin_val": "linkedin.com/in/enzo-real",
+    "github_label": "REPOSITORIO DE CÓDIGO",
+    "github_val": "github.com/EnzoReal",
+    "copy_btn": "[ ./copiar.sh ]",
+    "copied_msg": "[ COPIADO ]",
+    "open_btn": "[ ./abrir_enlace.sh ]"
   }
 }
